@@ -1,0 +1,90 @@
+
+body {
+  background:
+  /* top, transparent black, faked with gradient */ 
+  linear-gradient(
+    rgba(0, 0, 0, 0.7), 
+    rgba(0, 0, 0, 0.25)
+  ),
+  /* bottom, image */
+  url(./bg1.jpg);
+
+  background-size: cover;
+  background-position: center;
+
+}
+.main {
+  margin: 2%;
+}
+
+.card {
+  width: 20%;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 5px;
+  margin: 2%;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+  overflow: -moz-hidden-unscrollable;
+  box-sizing: border-box;
+  height: 800px;
+  float: left;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.25) ;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+.image img {
+  width: auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 540px;
+  display: block;
+  margin: auto;
+}
+
+.title {
+  text-align: center;
+  padding: 10px;
+}
+
+h1:hover {
+  font-size: 20px;
+  color: #000;
+}
+
+.des {
+  padding: 3px;
+  text-align: center;
+
+  padding-top: 10px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  height: auto;
+}
+#myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7, #myBtn8 {
+  margin-top: auto;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative
+}
+button:hover {
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#myBtn, #myBtn2, #myBtn3, #myBtn4, #myBtn5, #myBtn6, #myBtn7, #myBtn8{
+  background-color:red;
+  border-radius: 25px;
+}
+
+#more, #more2, #more3, #more4, #more5, #more6, #more7, #more8 {display: none;}
+
+html {
+  scroll-behavior: smooth;
+}
